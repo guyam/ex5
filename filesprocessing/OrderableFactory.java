@@ -46,10 +46,9 @@ public class OrderableFactory {
                     break;
                 default:
                     throw new IllegalArgumentException(ILLEGAL_INPUT_MSG);
-                    break;
             }
             if (NOT){
-                orderable = ReverseOrderer(orderable);
+                orderable = new ReverseOrderer(orderable);
             }
         }
         catch (IllegalArgumentException e){

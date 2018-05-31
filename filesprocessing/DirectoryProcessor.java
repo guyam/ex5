@@ -62,7 +62,7 @@ public class DirectoryProcessor {
             if (orderAndWarning.getWarning() != null)
                 System.out.println(orderAndWarning.getWarning());
             ArrayList<File> filteredFiles = filterAndWarning.getFilter().filter(filesList);
-            ArrayList<String> filteredAndOrderedFiles = orderAndWarning.getOrder().Order(filteredFiles);
+            ArrayList<String> filteredAndOrderedFiles = orderAndWarning.getOrder().order(filteredFiles);
             for (String fileName:filteredAndOrderedFiles){
                 System.out.println(fileName);
             }

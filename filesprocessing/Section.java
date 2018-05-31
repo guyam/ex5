@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Section {
     
     // Constants //
-    private final int ORDER = ORDER;
-    private final int FILTER = FILTER;
+    private final int ORDER = 1;
+    private final int FILTER = 0;
 
     int[] sectionIndexes;
 

@@ -95,10 +95,9 @@ public class FilterableFactory {
                     break;
                 default:
                     throw new IllegalArgumentException(ILLEGAL_INPUT_MSG);
-                    break;
             }
             if (REVERSE){
-                filterable = NotFilter(filterable);
+                filterable = new NotFilter(filterable);
             }
         }
         catch (IllegalArgumentException e){
