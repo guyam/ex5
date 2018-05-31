@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public abstract class SizeFilter extends GeneralFilter {
 
-    final double KILOBYTES_TO_BYTES = 1000;
+    final double KILOBYTES_TO_BYTES = 1024;
 
 
     double lowerBound;
