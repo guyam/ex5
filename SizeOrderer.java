@@ -6,17 +6,15 @@ import java.util.Collections;
 
 public class SizeOrderer extends GeneralOrder {
 
-    SizeOrderer(ArrayList<File> fileArrayInput, boolean printInReverse){
-        super(fileArrayInput,printInReverse);
+    SizeOrderer(ArrayList<File> fileArrayInput){
+        super(fileArrayInput);
     }
 
 
     @Override
-    public ArrayList<String> Order(ArrayList<File> arrayOfFiles) {
+    public ArrayList<String> order(ArrayList<File> arrayOfFiles) {
         Collections.sort(arrayOfFiles, new FileSizeComparator()); // TODO CHECK - comparator works??
-        if (reverseOrder){
-            reverseList(arrayOfFiles);
-        }
+
         return fileToStringConverter(arrayOfFiles);
     }
 

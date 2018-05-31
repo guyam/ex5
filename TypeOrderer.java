@@ -7,18 +7,15 @@ import java.util.Comparator;
 
 public class TypeOrderer extends GeneralOrder{
 
-    TypeOrderer(ArrayList<File> fileArrayInput, boolean printInReverse){
-        super(fileArrayInput,printInReverse);
+    TypeOrderer(ArrayList<File> fileArrayInput){
+        super(fileArrayInput);
     }
 
 
 
     @Override
-    public ArrayList<String> Order(ArrayList<File> arrayOfFiles) {
-        Collections.sort(arrayOfFiles, new FileTypeComperator()); // TODO CHECK - comparator works??
-        if (reverseOrder){
-            reverseList(arrayOfFiles);
-        }
+    public ArrayList<String> order(ArrayList<File> arrayOfFiles) {
+        Collections.sort(arrayOfFiles, new FileTypeComparator()); // TODO CHECK - comparator works??
         return fileToStringConverter(arrayOfFiles);
     }
 

@@ -5,6 +5,6 @@ import java.util.ArrayList;
 
 public interface Orderable {
 
-    public ArrayList<String> Order(ArrayList<File> arrayOfFiles);
+    public ArrayList<String> order(ArrayList<File> arrayOfFiles);
 
 }
